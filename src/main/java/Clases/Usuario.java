@@ -1,5 +1,4 @@
 package Clases;
-//cambios pal commit
 
 import javax.persistence.Entity;
 
