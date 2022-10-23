@@ -8,6 +8,9 @@ import javax.persistence.*;
 @Entity
 public class Emprendimiento {
 
+	@Id
+	@GeneratedValue
+	private Long id;
 	private String nombre;
 	private String url;
 	private String descripcion;
