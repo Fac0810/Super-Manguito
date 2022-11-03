@@ -4,14 +4,15 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
 http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
 <persistence-unit name="unlp">
 <provider>org.hibernate.ejb.HibernatePersistence</provider>
-<class>Clases.Administrador</class>
-<class>Clases.Categoria</class>
-<class>Clases.Donaciones</class>
-<class>Clases.DonacionManguito</class>
-<class>Clases.Emprendedor</class>
-<class>Clases.Emprendimiento</class>
-<class>Clases.Post</class>
-<class>Clases.Usuario</class>
+<class>clases.Administrador</class>
+<class>clases.Categoria</class>
+<class>clases.Donacion</class>
+<class>clases.DonacionPlan</class>
+<class>clases.DonacionManguito</class>
+<class>clases.Emprendedor</class>
+<class>clases.Emprendimiento</class>
+<class>clases.Post</class>
+<class>clases.Usuario</class>
 <properties>
 <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
 <property name="hibernate.connection.password" value="admin"/>

@@ -4,9 +4,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import Clases.Emprendedor;
-import ClasesDAO.DAOFactory;
-import ClasesDAO.EmprendedorDAOHibernateJPA;
+import clases.Emprendedor;
+import clasesDAO.DAOFactory;
+import clasesDAO.EmprendedorDAOHibernateJPA;
 
 public class PruebaEmprendedor {
 	public static void main(String[]args) {

@@ -1,6 +1,6 @@
-package ClasesDAO;
+package clasesDAO;
 
-import Clases.Emprendimiento;
+import clases.Emprendimiento;
 
 public class EmprendimientoDAOHibernateJPA extends GenericDAOHibernateJPA<Emprendimiento> {
 

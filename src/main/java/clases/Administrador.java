@@ -1,4 +1,4 @@
-package Clases;
+package clases;
 
 import javax.persistence.Entity;
 

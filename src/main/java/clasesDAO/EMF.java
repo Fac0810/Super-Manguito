@@ -1,4 +1,4 @@
-package ClasesDAO;
+package clasesDAO;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 public class EMF {

@@ -1,4 +1,4 @@
-package Clases;
+package clases;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +9,7 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy= InheritanceType.JOINED)
-public abstract class Donacion {
+public class Donacion {
 	
 	@Id
 	@GeneratedValue

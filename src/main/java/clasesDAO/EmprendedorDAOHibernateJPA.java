@@ -1,7 +1,7 @@
-package ClasesDAO;
+package clasesDAO;
 
-import Clases.Emprendedor;
-import Clases.Usuario;
+import clases.Emprendedor;
+import clases.Usuario;
 
 public class EmprendedorDAOHibernateJPA extends GenericDAOHibernateJPA<Usuario> implements UsuarioDAO {
 
