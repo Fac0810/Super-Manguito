@@ -1,11 +1,13 @@
-package ClasesDAO;
+package clasesDAO;
 
 import java.io.Serializable;
 import java.util.List;
 
 import javax.management.Query;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
 
 public class GenericDAOHibernateJPA<T> implements GenericDAO<T>{
 	
@@ -66,7 +68,10 @@ public class GenericDAOHibernateJPA<T> implements GenericDAO<T>{
 	
 	@Override
 	public T persist(T entity) {
-		EntityManager em=EMF.getEMF().createEntityManager();
+		
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("unlp");
+		EntityManager em = entityManagerFactory.createEntityManager();
+		//EntityManager em=EMF.getEMF().createEntityManager();
 		EntityTransaction tx = null;
 		try {
 			tx = em.getTransaction();

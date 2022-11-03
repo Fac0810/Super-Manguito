@@ -1,12 +1,12 @@
-package ClasesDAO;
+package clasesDAO;
 
-import Clases.Emprendedor;
-import Clases.Usuario;
+import clases.Emprendedor;
+import clases.Usuario;
 
 public class EmprendedorDAOHibernateJPA extends GenericDAOHibernateJPA<Usuario> implements UsuarioDAO {
 
 	@Override
-	public Usuario recuperarUsuario(String username) {
+	public Emprendedor recuperarUsuario(String username) {
 		javax.persistence.Query consulta = EMF.getEMF().createEntityManager().
 		createQuery("select p from Persona p where p.nombre =?");
 		consulta.setParameter(1, username);

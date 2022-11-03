@@ -1,7 +1,8 @@
-package Clases;
+package clases;
 import javax.persistence.*;
 
 @Entity
+
 public class Emprendedor extends Usuario {
 	
 	@OneToOne

@@ -1,6 +1,8 @@
-package Clases;
+package clases;
 
 import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
 @Entity
 public class Administrador extends Usuario {

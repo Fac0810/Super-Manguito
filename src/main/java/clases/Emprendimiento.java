@@ -1,5 +1,6 @@
-package Clases;
+package clases;
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,11 +8,12 @@ import javax.persistence.*;
 
 @Entity
 public class Emprendimiento {
-
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
 	private String nombre;
 	private String url;
 	private String descripcion;
-	private BufferedImage banner;
+	private byte[] banner;
 	private boolean mostTopDonors;
 	private boolean mostCantManguitos;
 	private float PrecioManguito;
