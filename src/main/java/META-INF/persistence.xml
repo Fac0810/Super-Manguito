@@ -4,6 +4,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
 http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
 <persistence-unit name="unlp">
 <provider>org.hibernate.ejb.HibernatePersistence</provider>
+<class>clases.Usuario</class>
 <class>clases.Emprendedor</class>
 <class>clases.Emprendimiento</class>
 <class>clases.Categoria</class>
@@ -12,7 +13,7 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
 <class>clases.DonacionPlan</class>
 <class>clases.Administrador</class>
 <class>clases.Post</class>
-<class>clases.Usuario</class>
+
 <properties>
 <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
 <property name="hibernate.connection.password" value="root"/>
@@ -20,7 +21,7 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
 <property name="hibernate.connection.username" value="root" />
 <property name="hibernate.default_schema" value="ttps" />
 <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-<!--property name="hibernate.hbm2ddl.auto" value="create"-->
+<property name="hibernate.hbm2ddl.auto" value="create"/>
 </properties>
 </persistence-unit>
 </persistence>

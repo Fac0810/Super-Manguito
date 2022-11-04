@@ -2,12 +2,13 @@ package clases;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Categoria {
-	@Id @GeneratedValue
-	private long id;
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long idCategoria;
 	private String nombre;
 	private String descripcion;
 	

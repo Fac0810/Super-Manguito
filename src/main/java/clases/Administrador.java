@@ -1,19 +1,23 @@
 package clases;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 @Entity
 public class Administrador extends Usuario {
-
-	public Administrador(String n, String c) {
-		super(n, c);
-		// TODO Auto-generated constructor stub
-	}
+	//@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	//private Long idUsuario;
+	private String nombre;
+	private String clave;
 
 	public Administrador() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
-
+	
 }

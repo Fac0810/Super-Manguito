@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Entity
 public class Donacion {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private long idDonacion;
 	private String nombre;
 	private String mail;
 	private String mensaje;

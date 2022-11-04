@@ -1,5 +1,6 @@
 package clases;
 
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,12 +8,13 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Table;
+import javax.sound.midi.VoiceStatus;
 
 @Entity
-
+@Inheritance(strategy = InheritanceType.JOINED)
 public  class Usuario {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long idUsuario;
 	private String nombre;
 	private String clave;
 	

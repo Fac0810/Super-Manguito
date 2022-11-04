@@ -2,22 +2,21 @@ package clases;
 import javax.persistence.*;
 
 @Entity
-
-public class Emprendedor extends Usuario {
+public class Emprendedor extends Usuario{
 	
 	@OneToOne
+	//@JoinColumn(name = "idEmprendedor")
 	private Emprendimiento emprendimiento;
 	
-	
-	public Emprendedor(String n, String c) {
-		super(n,c);
-		// TODO Auto-generated constructor stub
-	}
-
+	private String nombre;
+	private String clave;
 	public Emprendedor() {
-		// TODO Auto-generated constructor stub
+		
 	}
-	
+	public Emprendedor(String nombre, String clave) {
+		this.nombre=nombre;
+		this.clave=clave;
+	}
 	public void setEmprendimiento(Emprendimiento e) {
 		this.emprendimiento=e;
 	}

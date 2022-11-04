@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Entity
 public class Emprendimiento {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private long idEmprendimiento;
 	private String nombre;
 	private String url;
 	private String descripcion;
@@ -21,7 +21,7 @@ public class Emprendimiento {
 	private String descripcionBeneficio;
 	private ArrayList<String> redes;
 	
-	@ManyToMany
+	/*@ManyToMany
 	private List<Categoria> categorias;
 	
 	@OneToMany
@@ -31,13 +31,22 @@ public class Emprendimiento {
 	private List<DonacionPlan> donacionesPlan;
 	
 	@OneToMany
-	private List<DonacionManguito>donacionesManguito;
+	private List<DonacionManguito>donacionesManguito;*/
 	
-	@OneToOne
+	@OneToOne (mappedBy = "emprendimiento")
+	//@JoinColumn(name = "idEmprendedor", nullable = false)
 	private Emprendedor emprendedor; 
 	
 	public Emprendimiento() {
 		// TODO Auto-generated constructor stub
 	}
-
+	public Emprendimiento(String nombre) {
+		this.nombre=nombre;
+	}
+	
+	public void setEmprendedor(Emprendedor e) {
+		this.emprendedor=e;
+		e.setEmprendimiento(this);
+	}
+	
 }

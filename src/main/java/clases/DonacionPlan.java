@@ -12,6 +12,10 @@ import javax.persistence.PrimaryKeyJoinColumn;
 public class DonacionPlan extends Donacion {
 	
 	private float precioDonacion;
+	
+	public DonacionPlan(){
+		
+	}
 
 	private void setPrecioDonacion(float precioDonacion) {
 		this.precioDonacion=precioDonacion;

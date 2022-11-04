@@ -13,7 +13,7 @@ import javax.persistence.InheritanceType;
 @Entity
 public class Post {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private long idPost;
 	private String mensaje;
 	private byte[] imagen;
 	private Date fecha;
