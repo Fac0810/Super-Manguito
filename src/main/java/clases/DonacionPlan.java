@@ -3,6 +3,7 @@ package clases;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+<<<<<<< HEAD
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.PrimaryKeyJoinColumn;
@@ -16,6 +17,12 @@ public class DonacionPlan extends Donacion {
 	public DonacionPlan(){
 		
 	}
+
+@Entity
+public class DonacionPlan extends Donacion {
+	
+
+	private float precioDonacion;
 
 	private void setPrecioDonacion(float precioDonacion) {
 		this.precioDonacion=precioDonacion;

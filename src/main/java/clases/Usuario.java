@@ -12,7 +12,7 @@ import javax.sound.midi.VoiceStatus;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public  class Usuario {
+public abstract  class Usuario {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idUsuario;
 	private String nombre;

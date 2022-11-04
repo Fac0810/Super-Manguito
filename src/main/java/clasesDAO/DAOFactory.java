@@ -13,4 +13,5 @@ public class DAOFactory {
 	public static EmprendimientoDAOHibernateJPA getEmprendimiento() {
 		return new EmprendimientoDAOHibernateJPA();
 	}
+
 }

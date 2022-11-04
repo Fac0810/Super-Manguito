@@ -1,10 +1,11 @@
-package clases;
 
+package clases;
 import java.awt.image.BufferedImage;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+<<<<<<< HEAD
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
@@ -16,6 +17,18 @@ public class Post {
 	private long idPost;
 	private String mensaje;
 	private byte[] imagen;
+=======
+import javax.persistence.Id;
+
+@Entity
+public class Post {
+	
+	@Id
+	@GeneratedValue
+	private Long id;
+	private String mensaje;
+	private BufferedImage imagen;
+
 	private Date fecha;
 	
 	public Post() {
@@ -40,4 +53,7 @@ public class Post {
 	public Date getFecha() {
 		return fecha;
 	}
+=======
+
+>>>>>>> cc853730ba5503e8e8fa652c037021cf4b97c830
 }
