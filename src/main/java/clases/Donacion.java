@@ -15,7 +15,6 @@ import javax.persistence.Table;
 @Inheritance(strategy= InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(discriminatorType = DiscriminatorType.STRING)
 public abstract class Donacion {
-	
 	@Id
 	@GeneratedValue
 	private Long id;
