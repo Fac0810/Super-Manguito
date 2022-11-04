@@ -5,19 +5,6 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-<<<<<<< HEAD
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-
-@Entity
-public class Post {
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idPost;
-	private String mensaje;
-	private byte[] imagen;
-=======
 import javax.persistence.Id;
 
 @Entity
@@ -27,7 +14,7 @@ public class Post {
 	@GeneratedValue
 	private Long id;
 	private String mensaje;
-	private BufferedImage imagen;
+	private byte[] imagen;
 
 	private Date fecha;
 	
@@ -53,7 +40,5 @@ public class Post {
 	public Date getFecha() {
 		return fecha;
 	}
-=======
 
->>>>>>> cc853730ba5503e8e8fa652c037021cf4b97c830
 }

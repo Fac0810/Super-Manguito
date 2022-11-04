@@ -19,13 +19,13 @@ public class PruebaEmprendedor {
 		EmprendedorDAOHibernateJPA emprendedoresDaoHibernateJPA = DAOFactory.getEmprendedor();
 		e1=emprendedoresDaoHibernateJPA.persist(e1);
 		
-		Emprendimiento e= new Emprendimiento("oasis");
+		/*Emprendimiento e= new Emprendimiento("oasis");
 		e.setEmprendedor(e1);
 		EmprendimientoDAOHibernateJPA emprendimientoDAOHibernateJPA = DAOFactory.getEmprendimiento();		
 		e=emprendimientoDAOHibernateJPA.persist(e);
 		e1.setEmprendimiento(e);
-		emprendedoresDaoHibernateJPA.actualizar(e1);
-		/*PostDAOHibernateJPA postDAOHibernateJPA = DAOFactory.getPost();
+		//emprendedoresDaoHibernateJPA.actualizar(e1);
+		PostDAOHibernateJPA postDAOHibernateJPA = DAOFactory.getPost();
 		Post p = new Post();
 		p.setMensaje("Hola");
 		postDAOHibernateJPA.persist(p);*/

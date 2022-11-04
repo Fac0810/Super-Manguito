@@ -1,15 +1,14 @@
 package clases;
+import clases.Donacion;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-<<<<<<< HEAD
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.PrimaryKeyJoinColumn;
+
 
 @Entity
-@PrimaryKeyJoinColumn(name = "iddonacionplan")
+@DiscriminatorValue(value="p")
 public class DonacionPlan extends Donacion {
 	
 	private float precioDonacion;
@@ -18,17 +17,4 @@ public class DonacionPlan extends Donacion {
 		
 	}
 
-@Entity
-public class DonacionPlan extends Donacion {
-	
-
-	private float precioDonacion;
-
-	private void setPrecioDonacion(float precioDonacion) {
-		this.precioDonacion=precioDonacion;
-	}
-	
-	private float getPrecioDonacion() {
-		return precioDonacion;
-	}
 }

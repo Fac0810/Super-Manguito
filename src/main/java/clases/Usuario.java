@@ -1,6 +1,7 @@
 package clases;
 
 import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,7 +12,8 @@ import javax.persistence.Table;
 import javax.sound.midi.VoiceStatus;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(discriminatorType = DiscriminatorType.STRING,name = "tipoUser")
 public abstract  class Usuario {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idUsuario;

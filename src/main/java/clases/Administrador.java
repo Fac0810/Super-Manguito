@@ -10,6 +10,7 @@ import javax.persistence.InheritanceType;
 import javax.persistence.PrimaryKeyJoinColumn;
 
 @Entity
+@DiscriminatorValue(value = "Admin")
 public class Administrador extends Usuario {
 	//@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	//private Long idUsuario;

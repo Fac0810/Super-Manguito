@@ -1,7 +1,12 @@
 package clases;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+import clases.Donacion;
 
 @Entity
+@DiscriminatorValue(value="DonacionM")
 public class DonacionManguito extends Donacion {
 	
 	private int cantidadManguito;

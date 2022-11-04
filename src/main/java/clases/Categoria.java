@@ -2,10 +2,7 @@ package clases;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-<<<<<<< HEAD
 import javax.persistence.GenerationType;
-=======
->>>>>>> cc853730ba5503e8e8fa652c037021cf4b97c830
 import javax.persistence.Id;
 
 @Entity

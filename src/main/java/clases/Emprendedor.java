@@ -2,6 +2,7 @@ package clases;
 import javax.persistence.*;
 
 @Entity
+@DiscriminatorValue(value = "Empre")
 public class Emprendedor extends Usuario{
 	
 	@OneToOne
