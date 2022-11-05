@@ -1,4 +1,7 @@
 package clasesDAO;
+import clasesDAO.EmprendedorDAOHibernateJPA;
+import clasesDAO.PostDAOHibernateJPA;
+import clasesDAO.EmprendimientoDAOHibernateJPA;
 
 public class DAOFactory {
 	
